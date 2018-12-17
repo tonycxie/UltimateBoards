@@ -27,6 +27,7 @@ obj/
 .vscode/
 wwwroot/lib/
 TestResults/
+Migrations/
 ###################
 # Web publish log #
 ###################
@@ -76,4 +77,3 @@ _[Ss]cripts
 *.ncrunchsolution
 *.dot[Cc]over
 appsettings.json
-Migrations/
