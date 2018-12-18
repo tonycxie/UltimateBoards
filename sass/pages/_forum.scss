@@ -1,0 +1,50 @@
+.main {
+
+    .news-feed {
+        overflow-y: scroll;
+        height: 80rem;
+        overflow: -moz-scrollbars-none; 
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    
+    .section-header {
+        background-color: darken($color-primary, 10%);
+        margin-bottom: 1rem;
+        font-size: 3rem;
+    }
+
+    .section-content {
+        background-color: darken($color-primary, 10%);
+        border: 1px solid black;
+        height: 22rem;
+        display: flex;
+        margin: 2rem 0;
+        padding: 1rem;
+        &__img-box {
+            width: 30%;
+            height: 100%;
+        }
+
+        &__img {
+            width: 100%;
+            // max-height: 100%;
+        }
+
+        &__text-box {
+            border: 1px solid black;
+            margin-left: 2rem;
+            width: 60%;
+        }
+        .post-summary {
+            margin-top: 3rem;
+        }        
+    }
+
+    .side-bar-section {
+        background-color: darken($color-primary, 10%);
+        border: 1px solid black;
+        height: 40rem;
+    }
+}
