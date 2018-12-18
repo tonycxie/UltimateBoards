@@ -50,6 +50,33 @@ body {
 .section-content__text-box .post-summary {
   font-weight: bold; }
 
+.forum-row__header a {
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: yellow; }
+
+.forum-row--col {
+  color: white; }
+  .forum-row--col .title {
+    font-size: 1.4rem; }
+  .forum-row--col .count {
+    margin-top: .8rem;
+    font-size: 1.9rem; }
+
+.forum-row__recent-info .thread-title a {
+  font-size: 1.8rem;
+  color: yellow;
+  text-decoration: none;
+  text-transform: capitalize; }
+
+.forum-row__recent-info .time-posted {
+  font-size: 1.6rem;
+  color: #f7f7f7; }
+
+.forum-row__recent-info .last-poster a {
+  font-size: 1.6rem;
+  color: yellow; }
+
 .main .news-feed {
   overflow-y: scroll;
   height: 80rem;
@@ -86,10 +113,51 @@ body {
   border: 1px solid black;
   height: 40rem; }
 
+.main .forum-feed {
+  height: 90rem; }
+
+.main .section-header {
+  background-color: #302929;
+  margin-bottom: 1rem;
+  font-size: 3rem; }
+
+.main .discussion-section {
+  background-color: #302929;
+  border: 1px solid black;
+  height: 80%;
+  padding: 1rem; }
+  .main .discussion-section .forum-row {
+    height: 13%;
+    border: 1px solid black;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem; }
+    .main .discussion-section .forum-row__img-box {
+      margin-left: 2rem; }
+    .main .discussion-section .forum-row__img {
+      width: 5rem; }
+    .main .discussion-section .forum-row__header {
+      margin-left: 2rem;
+      margin-right: auto; }
+    .main .discussion-section .forum-row--col {
+      text-align: center;
+      margin-right: 2rem; }
+    .main .discussion-section .forum-row__recent-info {
+      width: 25%;
+      margin-left: 4rem; }
+      .main .discussion-section .forum-row__recent-info .time-posted, .main .discussion-section .forum-row__recent-info .last-poster {
+        display: inline-block; }
+
+.main .side-bar-section {
+  background-color: #302929;
+  border: 1px solid black;
+  height: 40rem; }
+
 .header {
   display: flex;
   align-items: flex-end;
-  margin: 2.5rem;
+  margin: 0 2.5rem 2.5rem 2.5rem;
   padding: 1rem; }
   .header__logo-box {
     margin-left: 2rem; }
