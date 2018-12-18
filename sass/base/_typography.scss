@@ -39,3 +39,37 @@
     
 }
 
+
+.forum-row {
+    &__header a {
+        text-decoration: none;
+        font-size: 2.5rem;
+        color: yellow;
+    }
+    &--col {
+        color: white;
+        .title {
+            font-size: 1.4rem;
+        }
+        .count {
+            margin-top: .8rem;
+            font-size: 1.9rem;
+        }
+    }
+    &__recent-info {
+        .thread-title a {
+            font-size: 1.8rem;
+            color: yellow;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+        .time-posted {
+            font-size: 1.6rem;
+            color: $color-grey-1;
+        }
+        .last-poster a {
+            font-size: 1.6rem;
+            color: yellow;
+        }
+    }
+}
