@@ -34,13 +34,11 @@ namespace UltimateBoards.Controllers
             return View();
         }
 
-
         [HttpGet]
         [Route("forum")]
         public IActionResult Forum()
         {
             return View();
         }
-
     }
 }

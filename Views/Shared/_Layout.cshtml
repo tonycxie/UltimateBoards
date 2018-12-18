@@ -9,7 +9,29 @@
 </head>
 <body>
     <div class="container body-content">
-        @RenderBody()
+        <div class="container-home">
+            <header class="header">
+                <h1 class="header-primary">Ultimate Boards</h1>
+                <div class="header__logo-box">
+                    <img src="~/imgs/logo.png" class="header__logo" alt="">
+                </div>
+                <a class="btn" href="/login">login</a>
+                <a class="btn" href="/">register</a>
+            </header>
+            <div class="nav">
+                <a href="/home" class="nav__item">Feed</a>
+                <a href="#" class="nav__item">Forums</a>
+                <a href="/streams" class="nav__item">Streams</a>
+                <a href="#" class="nav__item">Guides</a>
+                <a href="#" class="nav__item">Events</a>
+            </div>
+            <div class="main row">
+                @RenderBody()
+            </div>
+            <footer class="footer">
+            
+            </footer>
+        </div>
     </div>
         
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
