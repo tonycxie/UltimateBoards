@@ -34,11 +34,5 @@ namespace UltimateBoards.Controllers
             return View();
         }
 
-        [HttpGet]
-        [Route("news")]
-        public IActionResult News()
-        {
-            return View();
-        }
     }
 }

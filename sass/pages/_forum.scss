@@ -1,12 +1,7 @@
 .main {
 
-    .news-feed {
-        overflow-y: scroll;
-        height: 80rem;
-        overflow: -moz-scrollbars-none; 
-        &::-webkit-scrollbar {
-            display: none;
-        }
+    .forum-feed {
+        height: 90rem;
     }
     
     .section-header {
@@ -15,32 +10,47 @@
         font-size: 3rem;
     }
 
-    .section-content {
+    .discussion-section {
         background-color: darken($color-primary, 10%);
         border: 1px solid black;
-        height: 22rem;
-        display: flex;
-        margin: 2rem 0;
+        height: 80%;
         padding: 1rem;
-        &__img-box {
-            width: 30%;
-            height: 100%;
-        }
 
-        &__img {
-            width: 100%;
-            // max-height: 100%;
-        }
-
-        &__text-box {
+        .forum-row {
+            height: 13%;
             border: 1px solid black;
-            margin-left: 2rem;
-            width: 60%;
+            padding: 0;
+            display:flex;
+            align-items: center;
+            margin-top: 2rem;
+
+            &__img-box {
+                margin-left: 2rem;
+            }
+
+            &__img {
+                width: 5rem;  
+            }
+
+            &__header {
+                margin-left: 2rem;
+                margin-right: auto;
+            }
+
+            &--col {
+                text-align: center;
+                margin-right: 2rem;
+            }
+            &__recent-info {
+                width: 25%;
+                margin-left: 4rem;
+                .time-posted, .last-poster {
+                    display: inline-block;
+                }
+            }
         }
-        .post-summary {
-            margin-top: 3rem;
-        }        
     }
+
 
     .side-bar-section {
         background-color: darken($color-primary, 10%);
