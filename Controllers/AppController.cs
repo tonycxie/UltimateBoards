@@ -6,6 +6,8 @@ using Microsoft.EntityFrameworkCore;
 using UltimateBoards.Models;
 using System.Linq;
 using Microsoft.AspNetCore.Identity;
+using System.Threading.Tasks;
+using TwitchLib.Api;
 
 namespace UltimateBoards.Controllers
 {
@@ -18,7 +20,6 @@ namespace UltimateBoards.Controllers
             dbContext = context;
         }
 
-        // GET: /Home/
         [HttpGet]
         [Route("streams")]
         public IActionResult Streams()
