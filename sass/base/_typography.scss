@@ -21,11 +21,20 @@
     }
 }
 
-.section-content__text-box__header {
-    font-size: 3rem;
-    .link {
-        color: black;
-        text-decoration: none;
+.section-content__text-box {
+    &__header {
+        font-size: 3rem;
+        .link {
+            color: yellow;
+            text-decoration: none;
+        }    
+    }
+    .posted-date, .post-summary {
+        font-size: 1.6rem;
+        color: white;
+    }
+    .post-summary {
+        font-weight: bold;
     }
     
 }
