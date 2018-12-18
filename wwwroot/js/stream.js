@@ -1,9 +1,9 @@
 $(document).ready(function() {
     $.ajax({
         method: "GET",
-        url: 'https://api.twitch.tv/kraken/search/streams?query=smash bros ultimate&limit=9',
+        url: 'https://api.twitch.tv/kraken/search/streams?query=smash bros ultimate&limit=10',
         headers: {
-            "Client-ID": "i0gcva3x1ue9yfivg7rrwkv6s6i4c7",
+            "Client-ID": "i0gcva3x1ue9yfivg7rrwkv6s6i4c7", // don't forget to delete this
             "Accept": "application/vnd.twitchtv.v5+json"
         },
         success: function(response) {
