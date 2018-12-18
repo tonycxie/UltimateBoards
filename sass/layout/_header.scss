@@ -1,0 +1,25 @@
+.header {
+    display:flex; 
+    align-items: flex-end;
+    margin: 2.5rem;
+    padding: 1rem;
+    &-primary {
+
+    }
+
+    &__logo-box {
+        margin-left: 2rem;
+    }
+
+    &__logo {
+        width: 10rem;
+    }
+
+    .btn {
+        margin-right: 4rem;
+    }
+
+    .btn:not(:last-child) {
+        margin-left: auto;
+    }
+}

@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; /* settting the root font size */
+                     /* one rem  == Value you want (10px) / default value (16px) == 62.5 */
+}
+
+body {
+    box-sizing: border-box;
+}

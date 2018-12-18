@@ -25,5 +25,12 @@ namespace UltimateBoards.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        [Route("home")]
+        public IActionResult Home()
+        {
+            return View();
+        }
     }
 }
