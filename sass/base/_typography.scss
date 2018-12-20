@@ -73,3 +73,45 @@
         }
     }
 }
+
+.main-threads {
+    &__header {
+        font-size: 3rem;
+        color: yellow;
+        text-transform: uppercase;
+    }
+}
+
+.thread-row {
+    &__header {
+        color: $color-grey-1;
+
+        &--primary > a {
+            color: goldenrod;
+            font-size: 2rem;
+        }
+        &--secondary > a {
+            color: darken($color-grey-2, 10%);
+            &:hover {
+                color: lighten($color-grey-2, 40%);
+            }
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+    &__stats {
+        color: $color-grey-1;
+        font-size: 1.25rem;
+    }
+
+    &__info {
+        font-size: 1.15rem;
+        color:$color-grey-1;
+        &--last-poster > a {
+            font-size: 1.25rem;
+            color: goldenrod;
+            text-decoration: none;
+        }
+    }
+}

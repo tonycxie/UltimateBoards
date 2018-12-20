@@ -77,6 +77,35 @@ body {
   font-size: 1.6rem;
   color: yellow; }
 
+.main-threads__header {
+  font-size: 3rem;
+  color: yellow;
+  text-transform: uppercase; }
+
+.thread-row__header {
+  color: #f7f7f7; }
+  .thread-row__header--primary > a {
+    color: goldenrod;
+    font-size: 2rem; }
+  .thread-row__header--secondary > a {
+    color: #d5d5d5; }
+    .thread-row__header--secondary > a:hover {
+      color: white; }
+  .thread-row__header a {
+    text-decoration: none; }
+
+.thread-row__stats {
+  color: #f7f7f7;
+  font-size: 1.25rem; }
+
+.thread-row__info {
+  font-size: 1.15rem;
+  color: #f7f7f7; }
+  .thread-row__info--last-poster > a {
+    font-size: 1.25rem;
+    color: goldenrod;
+    text-decoration: none; }
+
 .main .news-feed {
   overflow-y: scroll;
   height: 80rem;
@@ -154,6 +183,36 @@ body {
   background-color: #302929;
   border: 1px solid black;
   height: 40rem; }
+
+.main-threads {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid black; }
+  .main-threads__header {
+    background-color: #302929; }
+  .main-threads .threads-container {
+    border: inherit;
+    overflow-y: scroll;
+    width: 100%;
+    height: 60rem;
+    background-color: #302929; }
+    .main-threads .threads-container .thread-row {
+      display: flex;
+      padding: 1rem; }
+      .main-threads .threads-container .thread-row:not(:first-child) {
+        margin-top: 1.5rem; }
+      .main-threads .threads-container .thread-row__img {
+        width: 4rem; }
+      .main-threads .threads-container .thread-row__header {
+        margin-right: auto;
+        margin-left: 1.5rem; }
+      .main-threads .threads-container .thread-row__stats {
+        margin-right: 10rem; }
+        .main-threads .threads-container .thread-row__stats--row {
+          display: flex;
+          justify-content: space-between; }
+      .main-threads .threads-container .thread-row .thread-col {
+        width: 10rem; }
 
 .header {
   display: flex;
