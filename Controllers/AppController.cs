@@ -40,5 +40,19 @@ namespace UltimateBoards.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        [Route("guides")]
+        public IActionResult Guides()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        [Route("events")]
+        public IActionResult Events()
+        {
+            return View();
+        }
     }
 }
