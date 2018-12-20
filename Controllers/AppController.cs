@@ -43,7 +43,20 @@ namespace UltimateBoards.Controllers
 
         [HttpGet]
         [Route("forum/{id}")]
-        public IActionResult Threads(int id)
+        public IActionResult Threads(int id) 
+        {
+            return View();
+        }
+
+        [Route("guides")]
+        public IActionResult Guides()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        [Route("events")]
+        public IActionResult Events()
         {
             return View();
         }
