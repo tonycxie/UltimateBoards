@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text.RegularExpressions;
 
 namespace UltimateBoards.Models
 {
@@ -26,13 +25,16 @@ namespace UltimateBoards.Models
         [DataType(DataType.Password)]
         [Required]
         [MinLength(8)]
-        // [PasswordPattern]
         public string Password {get;set;}
 
         [NotMapped]
         [Compare("Password")]
         [DataType(DataType.Password)]
         public string Confirm {get;set;}
+
+        public List<Thread> Threads {get;set;}
+
+        public List<ThreadComment> Comments {get;set;}
 
         public DateTime CreatedAt {get;set;} = DateTime.Now;
 
