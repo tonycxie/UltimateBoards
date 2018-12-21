@@ -115,3 +115,75 @@
         }
     }
 }
+
+
+.thread-container {
+    a {
+        text-decoration: none;
+    }
+    &--nav {
+        color: rgb(167, 126, 25);
+
+        .arrow {
+            font-size: 2.6rem;
+        }
+        .route a {
+            font-size: 1.7rem;
+            text-transform: capitalize;
+            color: rgb(167, 126, 25);
+            &:hover {
+                color: lighten(rgb(167, 126, 25), 20%);
+            }
+        }
+    }
+
+
+    .thread-header {
+        color: $color-grey-1;
+        &--primary {
+            font-size: 2rem;
+        }
+        &--secondary {
+            display: flex;
+            font-size: 1.6rem;
+            a.user {
+                color: darkgray;
+                text-decoration: none;
+                margin-right: 10px;
+            }
+            a.new-comment-btn {
+                font-size: 1.25rem;
+                background-color: rgb(53, 48, 48);
+                color: rgb(255, 255, 255);
+                &:hover {
+                    background-color:lighten(rgb(53, 48, 48), 10%);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .thread-post {
+        &--user {
+            &__name {
+                font-size: 1.6rem;
+                color: goldenrod;
+                text-align: center;
+            }
+            &__rank {
+                font-size: 1.4rem;
+                text-align: center;
+                color:white;
+            }
+            &__joined-date, &__messages {
+                display: flex;
+                justify-content: space-between;
+                color: darken($color-grey-1, 10%);
+            }
+        }
+
+        &--content > p {
+            font-size: 1.45rem;
+        }
+    }
+}

@@ -106,6 +106,57 @@ body {
     color: goldenrod;
     text-decoration: none; }
 
+.thread-container a {
+  text-decoration: none; }
+
+.thread-container--nav {
+  color: #a77e19; }
+  .thread-container--nav .arrow {
+    font-size: 2.6rem; }
+  .thread-container--nav .route a {
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    color: #a77e19; }
+    .thread-container--nav .route a:hover {
+      color: #e3b543; }
+
+.thread-container .thread-header {
+  color: #f7f7f7; }
+  .thread-container .thread-header--primary {
+    font-size: 2rem; }
+  .thread-container .thread-header--secondary {
+    display: flex;
+    font-size: 1.6rem; }
+    .thread-container .thread-header--secondary a.user {
+      color: darkgray;
+      text-decoration: none;
+      margin-right: 10px; }
+    .thread-container .thread-header--secondary a.new-comment-btn {
+      font-size: 1.25rem;
+      background-color: #353030;
+      color: white; }
+      .thread-container .thread-header--secondary a.new-comment-btn:hover {
+        background-color: #504848;
+        cursor: pointer; }
+
+.thread-container .thread-post--user__name {
+  font-size: 1.6rem;
+  color: goldenrod;
+  text-align: center; }
+
+.thread-container .thread-post--user__rank {
+  font-size: 1.4rem;
+  text-align: center;
+  color: white; }
+
+.thread-container .thread-post--user__joined-date, .thread-container .thread-post--user__messages {
+  display: flex;
+  justify-content: space-between;
+  color: #dedede; }
+
+.thread-container .thread-post--content > p {
+  font-size: 1.45rem; }
+
 .main .news-feed {
   overflow-y: scroll;
   height: 80rem;
@@ -129,8 +180,7 @@ body {
     width: 30%;
     height: 100%; }
   .main .section-content__img {
-    width: 100%; 
-    height: 100%; }
+    width: 100%; }
   .main .section-content__text-box {
     border: 1px solid black;
     margin-left: 2rem;
@@ -213,6 +263,52 @@ body {
           justify-content: space-between; }
       .main-threads .threads-container .thread-row .thread-col {
         width: 10rem; }
+
+.thread-container {
+  width: 80%;
+  height: 70rem;
+  margin: 0 auto;
+  overflow-y: scroll;
+  background-color: #221d1d;
+  padding: .5rem 2rem; }
+  .thread-container .route:not(:last-child) {
+    margin-right: .25rem; }
+  .thread-container .route:not(:first-child) {
+    margin-left: .25rem; }
+  .thread-container .thread-header {
+    margin-top: 1.5rem; }
+    .thread-container .thread-header--primary {
+      margin-bottom: .5rem; }
+    .thread-container .thread-header--secondary a.new-comment-btn {
+      border-radius: 1rem;
+      padding: .45rem;
+      margin-left: auto; }
+  .thread-container .thread-post {
+    margin-top: 1rem;
+    border: 1px solid white;
+    height: 36%;
+    display: flex; }
+    .thread-container .thread-post--user {
+      padding: 2rem;
+      background-color: #302929;
+      height: 100%;
+      width: 15%; }
+      .thread-container .thread-post--user__img-box {
+        margin: 0 auto;
+        width: 12rem; }
+      .thread-container .thread-post--user__img {
+        width: 12rem; }
+    .thread-container .thread-post .user-roster {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center; }
+      .thread-container .thread-post .user-roster__img {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%; }
+    .thread-container .thread-post--content {
+      padding: 3rem;
+      color: white; }
 
 .header {
   display: flex;
